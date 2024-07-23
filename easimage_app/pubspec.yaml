@@ -1,0 +1,20 @@
+name: easimage_app
+description: "EasImage App"
+publish_to: 'none' 
+version: 1.0.0+1
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  easimage_lib:
+    path: ../easimage_lib
+  test: ^1.25.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
