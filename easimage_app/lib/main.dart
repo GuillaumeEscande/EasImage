@@ -14,7 +14,23 @@ class EasImage extends StatelessWidget {
     return const MaterialApp(
       title: 'EasImage',
       themeMode: ThemeMode.light,
-      home: GalleryScreen(),
+      home: Column(
+        children: <Widget>[
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Expanded(
+                child: MenuBar(
+                  children: 
+                ),
+              ),
+            ],
+          ),
+          Expanded(
+            child: Text("Hello World"),
+          ),
+        ],
+      )
     );
   }
 }

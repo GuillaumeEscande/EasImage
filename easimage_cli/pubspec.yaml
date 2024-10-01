@@ -1,6 +1,6 @@
-name: easimage_lib
+name: easimage_cli
 description: A sample command-line application with basic argument parsing.
-version: 1.0.0
+version: 0.0.1
 # repository: https://github.com/my_org/my_repo
 
 environment:
@@ -9,7 +9,8 @@ environment:
 # Add regular dependencies here.
 dependencies:
   args: ^2.4.2
-  image: ^4.2.0
+  easimage_lib:
+    path: ../easimage_lib
 
 dev_dependencies:
   lints: ^3.0.0
